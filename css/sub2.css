@@ -1,0 +1,519 @@
+/* fontAwesome CDN */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* en */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/* ko */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* =============== reset =============== */
+html, body, content, footer, section, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, em, img, b, u, i, center, table, tbody, tr, td, th, article, aside, section, main, nav, ul, li, ol, form, label, legend, caption, mark, audio, video, img, dd, dl, dt{
+  margin: 0; padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul, li, ol{
+  list-style: none;
+}
+button, input, textarea, select, text{
+  outline: none;
+}
+button, input{
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+}
+
+#wrap{
+  width: 100%; height: 100%;
+  background-color: #f9f9f9;
+}
+
+/* =============== header =============== */
+#header{
+  width: 100%; height: 80px;
+  background: black;
+  z-index: 100;
+}
+.header-gnb{
+  width: 1440px; height: 80px;
+  margin: 0 auto;
+  
+  color: white; font-size: 17px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+/* navigation hover */
+.header-gnb li a{
+  position: relative;
+}
+.header-gnb li>a::after{
+  content: '';
+  width: 0; height: 1px;
+  background-color: yellow;
+
+  position: absolute;
+  top: 70%; left: 50%;
+
+  transform: translate(-50%);
+  transition: .3s;
+}
+.header-gnb li>a:hover::after{
+  width: 60%;
+}
+
+/* =============== navigation =============== */
+.gnb-left{
+  display: flex;
+}
+.logo{
+  width: 200px;
+}
+.gnb-right{
+  display: flex;
+}
+.gnb-right li:nth-child(4){
+  height: 25px;
+  line-height: 25px;
+  border-radius: 100px;
+  background: #ff0000;
+  transition: .3s;
+}
+
+.gnb-left li>a,
+.gnb-right>li a{
+  padding: 30px;
+  transition: .3s;
+}
+.gnb-left li>a:hover,
+.gnb-right li>a:hover{
+  color: yellow;
+}
+.gnb-right li:nth-child(4):hover{
+  background: rgb(110, 110, 21);
+}
+
+/* =============== sub-menu =============== */
+.sub-menu{
+  width: 100%; height: 120px;
+  border-top: 1px solid #999;
+
+  color: #eee; font-size: 15px;
+
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+.sub-menu a {
+  padding: 24px;
+  background: rgba(0,0,0,.9);
+  display: inline-block;
+}
+.sub-menu a::after {
+  content: "";
+}
+.sub-menu a:hover{
+  color: #ff0000;
+}
+
+/* =============== header-menu =============== */
+.trigger{
+  display: none;
+}
+.sidebar{
+  display: none;
+}
+
+/* =============== contents =============== */
+#contents{
+  width: 1440px;
+  margin: 0 auto;
+}
+#contents h1{
+  padding: 100px 0 30px 0;
+  font-size: 33px;
+  text-align: center;
+  position: relative;
+}
+#contents h1::after{
+  content: '';
+  width: 115px; height: 4px;
+  background: #ff0000;
+  position: absolute;
+  bottom: 15%; left: 46%;
+}
+.signup h3{
+  margin: 30px 0 10px 0;
+  font-size: 23px;
+}
+span{
+  color: #ff0000;
+}
+
+/* =============== signup =============== */
+.signup{
+  width: 850px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* th */
+table th{
+  width: 300px;
+  height: 80px;
+  padding: 20px;
+  background:rgb(235, 235, 235) ;
+  font-size: 17px;
+  text-align: left;
+}
+
+/* =============== tbody1 =============== */
+.tbody1{
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+/* id, pwd, pwdck */
+table .user-id input,
+table .user-pwd input,
+table .user-pwdCheck input{
+  margin: 10px 15px 10px 15px;
+  width: 500px;
+  height: 35px;
+}
+table .user-id p,
+table .user-pwd p{
+  margin: 0px 15px 0px 15px;
+}
+/* nbck, email, emailck, are */
+table .user-nbCk div,
+table .user-email div,
+table .user-emailCk div,
+table .user-are div{
+  margin: 10px 15px 10px 15px;
+}
+
+/* phone-number */
+table .user-nb input{
+  margin: 0px 15px 0 15px;
+  width: 85px;
+  height: 30px;
+}
+table .user-nb a input{
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50px;
+
+  color: #333;
+  background: rgb(199, 199, 199);
+  transition: .3s;
+}
+table .user-nb a input:hover{
+  color: white;
+  background: black;
+}
+table .PN-hyphen{
+  color: #333;
+}
+
+/* Check */
+.user-nbCk div input,
+.user-emailCk div input{
+  width: 30px;
+  accent-color: red;
+}
+.user-nbCk p,
+.user-emailCk p{
+  margin-top: 10px;
+
+  color:#666;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/* email */
+.user-email{}
+.user-email input{
+  margin: 10px 15px 10px 15px;
+  width: 160px;
+  height: 30px;
+}
+.email-list{
+  width: 100px;
+  height: 40px;
+}
+
+
+/* address */
+table .user-add input{
+  margin: 10px 15px 10px 15px;
+  width: 150px;
+  height: 35px;
+}
+table .user-add .address{
+  width: 500px;
+}
+
+.add-sub{
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50px;
+
+  color: #333;
+  background: rgb(199, 199, 199);
+  transition: .3s;
+}
+.add-sub:hover{
+  color: white;
+  background: black;
+}
+
+/* form */
+table .user-form input{
+  width: 30px;
+  accent-color: red;
+}
+
+/* =============== tbody2 =============== */
+.tbody2{
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+/* gender */
+table .user-gender input{
+  width: 30px;
+  accent-color: red;
+}
+
+/* birth-data */
+.user-birth select{
+  margin: 0px 0px 0px 10px;
+  width: 145px;
+  height: 35px;
+}
+
+/* camera */
+table .user-camera div{
+  margin-left: -25px;
+}
+table .user-camera input{
+  width: 80px;
+  accent-color: red;
+}
+table .user-camera span{
+  margin-left: -20px;
+  color: #333;
+  font-size: 18px;  
+}
+table .user-camera span:nth-child(2){
+  margin-right: 31px;
+}
+table .user-camera span:nth-child(2){
+  margin-right: 31px;
+}
+
+/* =============== signup-ck =============== */
+.signup-ck{
+  margin: 50px 0 150px 0;
+  text-align: center;
+}
+.signup-ck input{
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  color: #333;
+  transition: .3s;
+}
+
+.signup-ck input:nth-child(1){
+  font-size: 17px;
+  border: 1px solid #333;
+  transition: .3s;
+}
+.signup-ck input:nth-child(1):hover{
+  text-decoration: underline;
+  background: rgb(204, 204, 204);
+}
+
+.signup-ck input:nth-child(2){
+  color: #eee;
+  font-size: 17px;
+  background: black;
+  transition: .3s;
+}
+.signup-ck input:nth-child(2):hover{
+  text-decoration: underline;
+  background: #ff0000;
+}
+
+/* =============== footer =============== */
+#footer{
+  clear: both;
+  width: 100%;
+  background-color: black;
+  color: #eee;
+}
+.footer-box{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* =============== ft-link =============== */
+.ft-link ul{
+  display: flex;
+  justify-content: center;
+}
+.ft-link li{
+  flex: 1;
+}
+.ft-link li a{
+  padding: 20px;
+  display: block;
+
+  font-size: 16px; text-align: center;
+  
+  transition: .4s;
+  position: relative;
+}
+.ft-link li a::after{
+  content: "";
+  width: 1px; height: 15px;
+
+  display: block;
+  background-color: #eee;
+  
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+}
+.ft-link li:last-child a::after {
+  content: none;
+}
+.ft-link li:nth-child(3) a{
+  color: #fe3c08;
+}
+.ft-link li a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* =============== ft-info =============== */
+.ft-info{
+  padding: 20px;
+}
+.ft-inner{
+  display: flex;
+  padding: 30px 100px;
+}
+
+.ft-about{
+  flex: 2;
+  position: relative;
+}
+.ft-cs{
+  flex: 1;
+}
+
+.ft-about-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ft-about h3,
+.ft-cs h3{
+  font-size: 30px;
+}
+.ft-about p{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.ft-cs p{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.ft-about::after{
+  content: "";
+  width: 1px; height: 250px;
+  background-color: #eee;
+  
+  position: absolute;
+  top: 45%; right: -5%;
+  transform: translateY(-50%);
+}
+.ft-about span{
+  color: #ff0000;
+}
+
+.ft-cs{
+  margin-left: 70px;
+}
+.ft-cs span{
+  color: #ff0000; font-size: 30px;
+  font-weight: bold;
+}
+
+.ft-sns a img{
+  width: 45px;
+  margin: 20px 6px;
+  flex-direction: row;
+  transition: .4s;
+}
+.ft-sns a img:hover{
+  filter: invert(80%);
+}
+
+/* =============== top =============== */
+#toTop {
+  width: 70px; height: 70px;
+  display: block;
+  background: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #999;
+
+  color: #333;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 40px;
+
+  z-index: 999;
+  transition: .4s;
+}
+
+#toTop {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+}
+
+#toTop:hover{
+  color: #ff0000;
+}

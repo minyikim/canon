@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐논 코리아 주식회사 카메라</title>
+  <!-- =============== jquery-3.5.1.min =============== -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- =============== swiper.js =============== -->
+  <script src="js/swiper/jquery-3.5.1.min.js"></script>
+
+  <!-- =============== sub2.css =============== -->
+  <link rel="stylesheet" href="css/sub2.css">
+  <link rel="stylesheet" href="css/sub2_responsive.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- =============== header =============== -->
+    <header id="header">
+      <div class="header-gnb">
+        <ul class="gnb-left">
+          <li><a href="#none">제품</a>
+            <div class="sub-menu">
+              <a href="#none">DSLR</a>
+              <a href="#none">미러리스</a>
+              <a href="#none">렌즈</a>
+              <a href="#none">컴팩트 카메라</a>
+              <a href="#none">미니 포토 프린터</a>
+              <a href="#none">캠코더</a>
+              <a href="#none">시네마 EOS</a>
+              <a href="#none">BCTV</a>
+              <a href="#none">디스플레이</a>
+              <a href="#none">쌍안경</a>
+              <a href="#none">프로젝트</a>
+              <a href="#none">액세서리</a>
+              <a href="#none">단종제품</a>
+            </div>
+          </li>
+          <li><a href="#none">고객지원</a></li>
+          <li><a href="#none">이벤트</a></li>
+          <li><a href="#none">e 스토어</a></li>
+        </ul>
+        <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+        <ul class="gnb-right">
+          <li><a href="./sub1.html">로그인</a></li>
+          <li><a href="./sub2.html">회원가입</a></li>
+          <li><a href="#none"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          <li><a href="#none">정품등록</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- =============== contents =============== -->
+    <main id="contents">
+      <h1>회원가입</h1>
+
+      <div class="signup">
+        <!-- signup1 -->
+        <h3><span>&#42;&nbsp;</span>필수 기본정보</h3>
+        <div class="tbody1">
+          <table>
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>아이디</th>
+              <td class="user-id">
+                <div>
+                  <input type="text" id="userId"></div>
+                <p><span>아이디는 4 ~ 12자만 사용하실 수 있습니다.</span></p>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>비밀번호</th>
+              <td class="user-pwd">
+                <div><input type="password" id="userPwd"></div>
+                <p><span>(대/소문자, 숫자, 특수문자 3종 포함. 12 ~ 15자 미만)</span></p>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>비밀번호 확인</th>
+              <td class="user-pwdCheck">
+                <div><input type="password" id="userPwdCK" name="user-pwdCheck" autocomplete="on"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>휴대폰번호</th>
+              <td class="user-nb">
+                <div>
+                  <input type="text" id="PN1" name="PhoneNumber-f" title="휴대폰 첫자리">
+                  <span class="PN-hyphen">&#45;</span>
+                  <input type="text" id="PN2" name="PhoneNumber-m" title="휴대폰 중간자리">
+                  <span class="PN-hyphen">&#45;</span>
+                  <input type="text" id="PN3" name="PhoneNumver-l" title="휴대폰 끝자리">
+                  <a href="#none"><input type="submit" value="휴대폰인증"></a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span></span>SNS 수신여부</th>
+              <td class="user-nbCk">
+                <div>
+                  <input type="radio" name="sns">&nbsp;수신
+                  <input type="radio" name="sns">&nbsp;비수신
+                  <p>&#8251; '스팸 정보' 가 아닌, 회원님께서 누릴 수 있는 '<span><b>혜택정보</b></span>'를 <span><b>문자 메세지</b></span>로 보내
+                    드립니다.<br>(결제/교환/환불/배송 등의 거래 정보
+                    및
+                    서비스 관련 내용은 수신 동의 여부와 관계없이 발송됩니다.)</p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>이메일</th>
+              <td class="user-email">
+                <input type="email" id="user-e1">
+                <span class="PN-hyphen">&#64;
+                </span>
+                <input type="email" id="user-e2">
+                <select name="email" class="email-list">
+                  <option value="직접입력">--직접입력--</option>
+                  <option value="naver">naver.com</option>
+                  <option value="daum">daum.net</option>
+                  <option value="hanmail">hanmail.net</option>
+                  <option value="nate">nate.com</option>
+                  <option value="gmail">gmail.com</option>
+                  <option value="hotmail">hotmail.com</option>
+                  <option value="icloud">icloud.com</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span></span>이메일 수신여부</th>
+              <td class="user-emailCk">
+                <div>
+                  <input type="radio" name="email">&nbsp;수신
+                  <input type="radio" name="email">&nbsp;비수신
+                  <p>&#8251; '스팸 정보' 가 아닌, 회원님께서 누릴 수 있는 '<span><b>혜택정보</b></span>'를 <span><b>이메일</b></span>로 보내
+                    드립니다.<br>(결제/교환/환불/배송 등의 거래 정보
+                    및
+                    서비스 관련 내용은 수신 동의 여부와 관계없이 발송됩니다.)</p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>주소</th>
+              <td class="user-add">
+                <div>
+                  <input type="text" id="user-ad">
+                  <a href="#none"><input type="submit" class="add-sub" value="주소검색"></a>
+                  <input type="text" class="address" placeholder="상세주소 입력">
+                  <input type="text" class="address">
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span>&#42;&nbsp;</span>개인정보 보관 및 활용 기간</th>
+              <td class="user-form">
+                <input type="radio" name="formlist">&nbsp;회원 탈퇴 시 까지
+                <input type="radio" name="formlist">&nbsp;5년
+                <input type="radio" name="formlist">&nbsp;3년
+                <input type="radio" name="formlist">&nbsp;1년
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- signup2 -->
+        <h3>부가 정보</h3>
+        <div class="tbody2">
+          <table>
+            <tr>
+              <th class="row"><span></span>성별</th>
+              <td class="user-gender">
+                <input type="radio" name="gender">&nbsp;남자
+                <input type="radio" name="gender">&nbsp;여자
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span></span>생년월일</th>
+              <td class="user-birth">
+                <select class="birth" name="year">
+                  <option value="">--------- 년 ---------</option>
+                  <option value="2021">2021년</option>
+                  <option value="2020">2020년</option>
+                  <option value="2019">2019년</option>
+                  <option value="2018">2018년</option>
+                  <option value="2017">2017년</option>
+                  <option value="2016">2016년</option>
+                  <option value="2015">2015년</option>
+                  <option value="2014">2014년</option>
+                  <option value="2013">2013년</option>
+                  <option value="2012">2012년</option>
+                  <option value="2011">2011년</option>
+                  <option value="2010">2010년</option>
+                  <option value="2009">2009년</option>
+                  <option value="2008">2008년</option>
+                  <option value="2007">2007년</option>
+                  <option value="2006">2006년</option>
+                  <option value="2005">2005년</option>
+                  <option value="2004">2004년</option>
+                  <option value="2003">2003년</option>
+                  <option value="2002">2002년</option>
+                  <option value="2001">2001년</option>
+                  <option value="2000">2000년</option>
+                  <option value="1999">1999년</option>
+                  <option value="1998">1998년</option>
+                  <option value="1997">1997년</option>
+                  <option value="1996">1996년</option>
+                  <option value="1995">1995년</option>
+                  <option value="1994">1994년</option>
+                  <option value="1993">1993년</option>
+                  <option value="1992">1992년</option>
+                  <option value="1991">1991년</option>
+                  <option value="1990">1990년</option>
+                  <option value="1989">1989년</option>
+                  <option value="1988">1988년</option>
+                  <option value="1987">1987년</option>
+                  <option value="1986">1986년</option>
+                  <option value="1985">1985년</option>
+                  <option value="1984">1984년</option>
+                  <option value="1983">1983년</option>
+                  <option value="1982">1982년</option>
+                  <option value="1981">1981년</option>
+                  <option value="1980">1980년</option>
+                  <option value="1979">1979년</option>
+                  <option value="1978">1978년</option>
+                  <option value="1977">1977년</option>
+                  <option value="1976">1976년</option>
+                  <option value="1975">1975년</option>
+                  <option value="1974">1974년</option>
+                  <option value="1973">1973년</option>
+                  <option value="1972">1972년</option>
+                  <option value="1971">1971년</option>
+                  <option value="1970">1970년</option>
+                  <option value="1969">1969년</option>
+                  <option value="1968">1968년</option>
+                  <option value="1967">1967년</option>
+                  <option value="1966">1966년</option>
+                  <option value="1965">1965년</option>
+                  <option value="1964">1964년</option>
+                  <option value="1963">1963년</option>
+                  <option value="1962">1962년</option>
+                  <option value="1961">1961년</option>
+                  <option value="1960">1960년</option>
+                </select>
+                <select class="birth" name="month">
+                  <option value="">--------- 월 ---------</option>
+                  <option value="1">1월</option>
+                  <option value="2">2월</option>
+                  <option value="3">3월</option>
+                  <option value="4">4월</option>
+                  <option value="5">5월</option>
+                  <option value="6">6월</option>
+                  <option value="7">7월</option>
+                  <option value="8">8월</option>
+                  <option value="9">9월</option>
+                  <option value="10">10월</option>
+                  <option value="11">11월</option>
+                  <option value="12">12월</option>
+                </select>
+                <select class="birth" name="day">
+                  <option value="">--------- 일 ---------</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                  <option value="4">4일</option>
+                  <option value="5">5일</option>
+                  <option value="6">6일</option>
+                  <option value="7">7일</option>
+                  <option value="8">8일</option>
+                  <option value="9">9일</option>
+                  <option value="10">10일</option>
+                  <option value="11">11일</option>
+                  <option value="12">12일</option>
+                  <option value="13">13일</option>
+                  <option value="14">14일</option>
+                  <option value="15">15일</option>
+                  <option value="16">16일</option>
+                  <option value="17">17일</option>
+                  <option value="18">18일</option>
+                  <option value="19">19일</option>
+                  <option value="20">20일</option>
+                  <option value="21">21일</option>
+                  <option value="22">22일</option>
+                  <option value="23">23일</option>
+                  <option value="24">24일</option>
+                  <option value="25">25일</option>
+                  <option value="26">26일</option>
+                  <option value="27">27일</option>
+                  <option value="28">28일</option>
+                  <option value="29">29일</option>
+                  <option value="30">30일</option>
+                  <option value="31">31일</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="row"><span></span>카메라 보유 현황</th>
+              <td class="user-camera">
+                <div>
+                  <input type="checkbox"><span>캐논</span>
+                  <input type="checkbox"><span>소니</span>
+                  <input type="checkbox"><span>니콘</span>
+                  <input type="checkbox"><span>올림푸스</span><br>
+                  <input type="checkbox"><span>후지필름</span>
+                  <input type="checkbox"><span>코닥</span>
+                  <input type="checkbox"><span>라이카</span>
+                  <input type="checkbox"><span>기타</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <!-- signup-ck -->
+        <div class="signup-ck">
+          <input type="reset" value="취소">
+          <input type="submit" value="회원가입">
+        </div>
+
+      </div>
+    </main>
+
+    <!-- =============== footer =============== -->
+    <footer id="footer">
+      <div class="footer-box">
+        <div class="ft-link">
+          <ul>
+            <li><a href="https://kr.canon/">회사소개</a></li>
+            <li><a href="#none">이용약관</a></li>
+            <li><a href="#none">개인정보처리방침</a></li>
+            <li><a href="#none">영상정보처리 운영방침</a></li>
+            <li><a href="#none">사이트맵</a></li>
+            <li><a href="https://kr.canon/">캐논코리아통합사이트</a></li>
+            <li><a href="https://global.canon/en/index.html">캐논 글로벌</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-info">
+          <div class="ft-inner">
+            <div class="ft-about">
+              <h3>ABOUT CANON</h3>
+              <div class="ft-about-box">
+                <p>상호 : 캐논코리아 주식회사<br>대표자 : 최세환<br>사업자등록번호 : 120-81-15636<br>통신판매업 신고번호 : 강남-01282</p>
+                <p>[사업자정보확인]<br>
+                  주소 : 서울특별시 강남구 테헤란로 607 (삼성동)<br>
+                  이메일 : canonestore@kr.canon</p>
+              </div>
+              <p>COPYRIGHT &copy; <span>CANON KOREA INC.</span> AII RIGHTS RESERVED</p>
+            </div>
+
+            <div class="ft-cs">
+              <h3>CS CENTER</h3>
+              <p><span><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;1533-3355</span></p>
+              <p>&nbsp;&#45; 평일 : 09:00 &#126; 18:00</p>
+              <p>&nbsp;&#45; 토요일 및 공휴일 휴무</p>
+
+              <!-- ft-sns -->
+              <div class="ft-sns">
+                <a href="https://www.facebook.com/canonkoreacamera"><img src="img/sns1.svg" alt=""></a>
+                <a href="https://me2.kr/27gze"><img src="img/sns2.svg" alt=""></a>
+                <a href="https://www.instagram.com/canonkorea/"><img src="img/sns3.svg" alt=""></a>
+                <a href="https://blog.naver.com/canonkoreacamera"><img src="img/sns4.svg" alt=""></a>
+                <a href="https://story.kakao.com/ch/canoncamera"><img src="img/sns5.svg" alt=""></a>
+                <a href="https://twitter.com/canoncamera_kr"><img src="img/sns6.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- top  -->
+  <a href="#" id="toTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+  <!-- custom.js -->
+  <script src="js/custom.js"></script>
+
+  <!-- navigation -->
+  <script>
+    $('.gnb-left li:nth-child(1)').mouseenter(function () {
+      $('.sub-menu').stop().slideDown()
+    })
+    $('.gnb-left li:nth-child(1)').mouseleave(function () {
+      $('.sub-menu').stop().slideUp()
+    })
+  </script>
+
+</body>
+
+</html>

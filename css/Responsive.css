@@ -1,0 +1,361 @@
+/* responsive */
+@media(max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+
+  /* =============== header =============== */
+  #header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .gnb-left li,
+  .gnb-right li {
+    display: none;
+  }
+
+  /* =============== trigger =============== */
+  .trigger {
+    margin-top: 10px;
+    width: 45x; height: 25px;
+    display: block;
+
+    position: absolute;
+    top: 15px; left: 30px;
+    cursor: pointer;
+  }
+
+  .trigger span {
+    width: 100%; height: 3px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    position: absolute;
+    transition: .3s;
+  }
+
+  .trigger span:nth-child(1) {
+    width: 35px;
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    width: 20px;
+    top: 45%;
+  }
+  .trigger span:nth-child(3) {
+    width: 30px;
+    bottom: 0;
+  }
+
+  /* =============== trigger-hover =============== */
+  .trigger.active span:nth-child(1) {
+    width: 30px;
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+
+  /* =============== content1 =============== */
+  #content1{
+    border: 1px solid red;
+    width: 100%; height: 100%;
+  }
+
+  /* =============== main-visual =============== */
+  .main-visual_wrap{
+    width: 100%;
+    display: flex;
+  }
+  .main-visual_text{
+    margin: 250px 15px;
+    flex: 3;
+  }
+  .main-visual_text p {
+    font-size: 15px;
+  }
+  .main-visual_text h1 {
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Neucha', cursive;
+  }
+  .main-visual_text button {
+    width: 50%; height: 30%;
+    margin: 0 10px;
+    border: none;
+    background: black;
+    color: white; font-size: 11px;
+  }
+  .main-bg img{
+    flex: 1;
+    width: 440px;
+    margin-top: 150px;
+  }
+
+  /* =============== quick-menu =============== */
+  .quick-menu_sec{
+    width: 100%; height: 40vh;
+    background: #eeeeee;
+    display: flex;
+  }
+  .quick-menu{
+    border: 1px solid red;
+    width: 70%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .quick-menu span img{
+    width: 100%;
+    height: 100%;
+  }
+  .quick-menu_text{
+    padding: 30px;
+    width: 100%;
+  }
+  .quick-menu_text h3{
+    text-align: center;
+    font-size: 17px;
+  }
+  .quick-menu_text p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /* =============== main-pro =============== */
+  .main-pro{
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: 20px 0 20px 0;
+  }
+  .main-pro_sec{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pro-title{
+    font-size: 35px;
+  }
+  .main-pro_inner h3{
+    font-size: 16px;
+  }
+  .main-pro_inner p{
+    font-size: 12px;
+  }
+
+  /* =============== bg =============== */
+  .swiper {
+    width: 100%;
+    margin: -50px auto;
+  }
+  .swiper-container{
+    position: relative;
+  }
+  .swiper-slide>img {
+  }
+  .swiper-pagination {
+    position: absolute;
+    top: 90%; left: 50%;
+    transform:translateX(-50%);
+    white-space: nowrap; 
+  }
+  .swiper-pagination-bullet {
+    width: 60px; height: 6px;
+    margin:0 3px 3px 0;
+    background:#eee;
+    border-radius: 0;
+    opacity: .8;
+  }
+  .swiper-pagination-bullet-active{
+    opacity: 1;
+    background:#ff0000;
+  }
+  .swiper-pagination-bullet:focus{
+    outline:none;
+  }
+
+  /* bg-text */
+  .bg_text {
+    background-color: black;
+    color:#fff;
+    font-size: 12px;
+  }
+
+  /* =============== e store =============== */
+  #content2 {
+    width: 100%; height: 320vh;
+    border: 1px solid #000;
+  }
+  .store_sec {
+    width: 100%;
+  }
+  .store_sec h2{
+    margin: 100px 100px;
+    text-align: center; font-size: 30px;
+  }
+
+  .store-box1,
+  .store-box2{
+    width: 100%;
+    margin: -70px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .store-box1 img,
+  .store-box2 img{
+    width: 80%;
+    border-bottom: none;
+  }
+
+  .store-btn{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 0 20px 0;
+    box-shadow: 0 0 3px #888888;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  /* store hover */
+  .store-btn::after{
+    content: '';
+    width: 0%; height: 5px;
+    border-radius: 50px;
+    background-color: #ff0000;
+  
+    position: absolute; 
+    top: 55%; left: 0%;
+    transition: .5s;
+  }
+  .store-btn:hover::after{
+    width: 100%;
+  }
+  .store-btn1::after,
+  .store-btn2::after,
+  .store-btn3::after,
+  .store-btn4::after,
+  .store-btn5::after,
+  .store-btn6::after{
+    display: none;
+  }
+  
+  /* store font */
+  .store-box1 h3,
+  .store-box2 h3{
+    font-size: 30px;
+  }
+  .store-box1 p,
+  .store-box2 p{
+    font-size: 14px;
+  }
+  .store-box1 span,
+  .store-box2 span{
+    font-size: 12px;
+  }
+  
+  .store_btn{
+    margin-top: -80px;
+    width: 25%;
+  }
+
+  /* =============== link_sec =============== */
+  .link_sec{
+    height: 100%;
+    display: flex;
+  }
+  .link-box{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .link-box1{
+    height: 100px;
+    margin-right: 0px;
+    flex: 1;
+  }
+  .link-box2{
+    flex: 2;
+  }
+  .link-box3{
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .link-box1 img,
+  .link-box3 img{
+    width: 40%;
+  }
+  .link-box2 img{
+    width: 85%;
+  }
+
+  /* =============== content3 =============== */
+  #content3{
+    width: 100%; height: 100%;
+    margin: -50px 0 50px 0;
+  }
+  .store_map h2{
+    font-size: 30px;
+  }
+  .store_map iframe{
+    width: 100%;
+  }
+
+  /* =============== footer =============== */
+  .footer-box{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ft-link li a{
+    font-size: 11px;
+  }
+  .ft-link li a::after{
+    display: none;
+  }
+
+  .ft-inner{
+    margin-left: -100px;
+  }
+  .ft-info{
+    width: 115%;
+  }
+
+  .ft-about{
+  }
+  .ft-about::after{
+    height: 300px;
+    position: absolute;
+    top: 45%; right: 1%;
+  }
+
+  .ft-about p,
+  .ft-cs p{
+    font-size: 14px;
+  }
+
+  .ft-cs{
+    margin-left: 10px;
+  }
+  .ft-sns a img{
+    margin-bottom: -15px;
+  }
+
+
+} /* media */

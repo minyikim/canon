@@ -1,0 +1,77 @@
+/* responsive */
+@media(max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+
+  /* =============== header =============== */
+  #header {
+    display: flex;
+    z-index: 100;
+  }
+
+  .gnb-left li,
+  .gnb-right li {
+    display: none;
+  }
+
+  /* =============== log_wrap =============== */
+  .log_wrap{
+    width: 100%;
+    height: 110vh;
+  }
+
+  .login{
+    width: 80%;
+  }
+  .login h1{}
+
+  .tab_inner .btn span{
+    width: 50%;
+  }
+
+  /* =============== footer =============== */
+  .footer-box{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ft-link li a{
+    font-size: 11px;
+  }
+  .ft-link li a::after{
+    display: none;
+  }
+
+  .ft-inner{
+    margin-left: -100px;
+  }
+  .ft-info{
+    width: 115%;
+  }
+
+  .ft-about{
+  }
+  .ft-about::after{
+    height: 300px;
+    position: absolute;
+    top: 45%; right: -3%;
+  }
+
+  .ft-about p,
+  .ft-cs p{
+    font-size: 13px;
+  }
+
+  .ft-cs{
+    margin: -10px 0 0 30px;
+  }
+  .ft-cs p{
+    line-height: 25px;
+  }
+  .ft-sns a img{
+    margin-bottom: -15px;
+  }
+
+
+} /* media */
